@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Debit Card Payment Page</title>
+</head>
+<body>
+<h1>Debit Card Payment Page</h1>
+<form action="process-payment.php" method="post">
+<pre>
+<label for="card-number">Card Number:- </label>
+<input type="text" id="card-number" name="card-number"
+required>
+<br>
+<label for="expiration-date">Expiration Date:-</label>
+<input type="month" id="expiration-date" name="expiration-date" required>
+<br>
+<label for="cvv">CVV:-</label>
+<input type="text" id="cvv" name="cvv" maxlength="3" required>
+<br>
+<label for="cardholder-name">Card-holder Name:-</label>
+<input type="text" id="cardholder-name" name="cardholder-name" required>
+<br>
+</pre>
+<input type="submit" value="Pay Now" onclick="check()">
+<script>
+function check(){
+var k = "The Payment has done successfully your order will be arrived soon!";
+alert(k);
+}
+</script>
+</form>
+</body>
+</html>
